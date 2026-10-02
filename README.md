@@ -18,7 +18,6 @@ ya pkg add DarkSpoon/relative-motions
 
 If you want to use the numbers directly to start a motion add this to your `keymap.toml`:
 
-<details>
 
 ```toml
 [[mgr.prepend_keymap]]
@@ -67,9 +66,11 @@ run = "plugin relative-motions 9"
 desc = "Move in relative steps"
 ```
 
-</details>
+
 
 Alternatively you can use a key to trigger a new motion without any initial value, for that add the following in `keymap.toml`:
+
+<details>
 
 ```toml
 [[mgr.prepend_keymap]]
@@ -78,6 +79,7 @@ run = "plugin relative-motions"
 desc = "Trigger a new relative motion"
 ```
 
+</details>
 ---
 
 Additionally there are a couple of initial configurations that can be given to the plugin's `setup` function:
